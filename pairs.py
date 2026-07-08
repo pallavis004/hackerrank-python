@@ -5,7 +5,5 @@ def divisibleSumPairs(n, k, ar):
             if (ar[i] + ar[j]) % k == 0:
                 count += 1
     return count
-
-
 if __name__ == "__main__":
     print(divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2])) 

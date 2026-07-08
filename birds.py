@@ -6,4 +6,4 @@ def migratoryBirds(arr):
     candidates = [bird for bird, c in counts.items() if c == max_count]
     return min(candidates)
 if __name__ == "__main__":
-    print(migratoryBirds([1, 4, 4, 4, 5, 3]))  
+ print(migratoryBirds([1, 4, 4, 4, 5, 3]))  

@@ -8,4 +8,4 @@ def dayOfProgrammer(year):
     day = 12 if leap else 13
     return f"{day:02d}.09.{year}"
 if __name__ == "__main__":
-    print(dayOfProgrammer(2016))  # expected: 12.09.2016
+    print(dayOfProgrammer(2016)) 
