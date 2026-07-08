@@ -10,8 +10,6 @@ def flippingMatrix(matrix):
                 matrix[2*n-1-i][2*n-1-j]
             )
     return total
-
-
 if __name__ == '__main__':
     q = int(input().strip())
     for _ in range(q):
