@@ -7,7 +7,6 @@ def jumpingOnClouds(c, k):
         if i == 0:
             break
     return e
-
 if __name__ == '__main__':
     n, k = map(int, input().rstrip().split())
     c = list(map(int, input().rstrip().split()))

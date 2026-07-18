@@ -1,4 +1,4 @@
-from itertools import combinations
+from itertools import combinationspython
 def acmTeam(topic):
     counts = [bin(int(a, 2) | int(b, 2)).count('1') for a, b in combinations(topic, 2)]
     m = max(counts)
