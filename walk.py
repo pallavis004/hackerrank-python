@@ -1,9 +1,13 @@
-def marcsCakewalk(calorie):
-    calorie.sort(reverse=True)
-    total = 0
-    for i in range(len(calorie)):
-        total = total + (2 ** i) * calorie[i]
-    return total
-n = int(input("Enter number of cupcakes: "))
-calorie = list(map(int, input("Enter calories: ").split()))
-print(marcsCakewalk(calorie))
+def minimumAbsoluteDifference(arr):
+    arr.sort()
+    minimum = abs(arr[1] - arr[0])
+
+    for i in range(1, len(arr)):
+        difference = abs(arr[i] - arr[i - 1])
+        if difference < minimum:
+            minimum = difference
+    return minimum
+n = int(input("Enter size: "))
+arr = list(map(int, input("Enter numbers: ").split()))
+answer = minimumAbsoluteDifference(arr)
+print("Minimum Absolute Difference:", answer)
