@@ -1,12 +1,12 @@
-def pokerNim(k, c):
-    xor = 0
-    for chips in c:
-        xor = xor ^ chips
-    if xor == 0:
+def nimbleGame(s):
+    answer = 0
+    for i in range(len(s)):
+        if s[i] % 2 == 1:
+            answer = answer ^ i
+    if answer == 0:
         return "Second"
     else:
         return "First"
-k = int(input("Enter k: "))
-c = list(map(int, input("Enter chips: ").split()))
-answer = pokerNim(k, c)
+s = list(map(int, input("Enter the coins: ").split()))
+answer = nimbleGame(s)
 print("Winner:", answer)
